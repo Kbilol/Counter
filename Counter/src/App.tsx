@@ -7,6 +7,9 @@ function App() {
   const onClickPlus = () => {
     setCount(count + 1);
   };
+  const onClickx = () => {
+    setCount(count * 2);
+    };
 
   const onClickMinus = () => {
     setCount(count - 1);
@@ -22,6 +25,12 @@ function App() {
           className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition-transform active:scale-95"
         >
           – Минус
+        </button>
+        <button
+          onClick={onClickx}
+          className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition-transform active:scale-95"
+        >
+          X
         </button>
         <button
           onClick={onClickPlus}
